@@ -1,0 +1,18 @@
+ Today i learnt about Node.js as a javascript runtime that lets you run Javascript outside the browser, typically on a server. Express is a minimal web framework on top of Node. it handles routing, request and response helpers so you don't write raw http module code. The express allows you to route an http method and a url path to a function. There are middlewares in express like functions that run in order  with access to "req" and "res".
+ req means incoming request
+ res means sending something back
+ I also learnt that API'always respond with JSON, not plain text.
+ Foundations of the Http methods and CRUD;
+ GET - read data
+ POST - create data
+ PUT/PATCH - update data
+ DELETE - remove data
+
+To read data sent in a POST request body, you need middleware first.For instance, express.json() parses incoming JSON bodies into req.body. Without it req.body is undefined.
+We then moved to Http status codes which tells the client what happened, separately from the response body. Examples are;
+200 - success
+201  - made something new
+400 - client sent invalid data
+404 - the resource doesn't exist
+500 -  somethign broke on the server side 
+
